@@ -1,0 +1,174 @@
+:root {
+    --theme: #121212;
+    /* Referring from apple.com */
+    --font-theme: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    --font-color: white;
+}
+
+* {
+    background-color: var(--theme);
+    font-family: var(--font-theme);
+    color: var(--font-color);
+    box-sizing: border-box;
+}
+
+
+
+h1 {
+    font-size: 2rem;
+    color: transparent;
+}
+
+.header {
+    padding: 20px;
+    width: 100%;
+}
+
+.containers {
+    display: flex;
+
+}
+
+.left-column {
+
+    background: linear-gradient(#121212, #1a6e55);
+    height: 100vh;
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    align-items: center;
+
+
+    .logo-container {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border: 0;
+        gap: 1vw;
+        background-color: #878787;
+
+        position: relative;
+        top: -20%;
+
+        img {
+            height: 10rem;
+            object-fit: cover;
+            background: transparent;
+        }
+
+        .odin-text {
+            font-size: 8rem;
+            font-family: Norse, Arial, Helvetica, sans-serif;
+            background-color: inherit;
+            text-align: center;
+        }
+
+    }
+
+
+}
+
+.right-column {
+
+    display: block;
+    flex: 7.5;
+    padding: 20px;
+    padding-inline-start: 40px;
+
+    .header-text {
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+}
+
+
+.form-container {
+    border: 1px solid ghostwhite;
+    border-radius: 3px;
+    margin-top: 30px;
+    padding: 20px;
+    width: 100%;
+    display: block;
+}
+
+.form-signup {
+    display: flex;
+    flex-wrap: wrap;
+
+    label + input {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+
+    label {
+        width: 50%;
+        font-size: 0.875rem;
+        font-weight: 700;
+        letter-spacing: .2rem;
+    }
+
+    input {
+        margin-top: 2px;
+        padding: 12px;
+        border: 0;
+        border-bottom: 1px solid #878787;
+        border-radius: 4px;
+        font-size: 1rem;
+        inline-size: 80%;
+    }
+
+    input:hover {
+        border: none;
+        border-bottom: 1px solid white;
+    }
+
+    input:active {
+        border:none;
+        border-bottom: solid calc(3px / 2) white;
+    }
+
+    .form-content {
+        margin-top: 8px;
+    }
+}
+
+.form-col {
+    width: 50%;
+}
+
+.create-account {
+    margin-top: 30px;
+    border-radius: 777px;
+    padding: 12px 20px;
+    font-size: 1.125rem;
+    cursor: pointer;
+    border: 1px solid white;
+    font-weight: 700;
+}
+
+
+.create-account:hover {
+    background-color: #878787;
+    color: black;
+}
+
+.create-account:active {
+    background-color: #878787;
+    color: white;
+    opacity: 0.7;
+}
+
+.footer-text {
+    margin-top: 20px;
+    font-size: 1.125rem;
+
+    span {
+        cursor:pointer;
+        color: deepskyblue;
+        font-weight: 700;
+    }
+}
